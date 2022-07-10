@@ -1,0 +1,236 @@
+.container {
+    padding: 0 1rem;
+  }
+  
+  .main {
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 100ch;
+    width: calc(100% - 2px);
+    margin: 16px auto;
+    gap: 30px;
+  }
+
+  .updates {
+      gap: 0px;
+  }
+
+
+
+  .portfolio {
+    width: 20rem;
+    height: 13rem;
+    margin-right: 13px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .portfolio2 {
+    width: 20rem;
+    object-fit: cover;
+    height: 28rem;
+    margin-top: 10px;
+    margin-right: 13px;
+    margin-bottom: 13px;
+    border-radius: 10px;
+  }
+
+  .imagegrid {
+    display: flex;
+    gap: 10px;
+  }
+
+
+  .maincontent {
+  flex-basis: 65%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  overflow-y: auto;
+  padding-bottom: 0px;
+  padding-right: 44.8px;
+  padding-top: 0px;
+  border-right-color: rgba(169, 186, 164, 0.2);
+  border-right-style: solid;
+  border-right-width: 2px;
+  box-sizing: border-box;
+  }
+
+  .update {
+    align-items: normal;
+  color: rgb(235, 235, 235);
+  display: block;
+  flex-direction: row;
+  font-family: system-ui, sans-serif;
+  justify-content: normal;
+  margin-bottom: 20px;
+  word-break: break-word;
+  }
+
+  .oogabooga {
+    align-items: normal;
+  color: rgb(235, 235, 235);
+  display: flex;
+  font-family: system-ui, sans-serif;
+  justify-content: normal;
+  margin-bottom: 20px;
+  word-break: break-word;
+  gap: 15px;
+  }
+
+  .imagegallery {
+    height: 10rem;
+    width: 15rem;
+  }
+
+  .time {
+    color: rgb(164, 167, 169);
+  font-family: system-ui, sans-serif;
+  font-size: 14px;
+  margin-bottom: -7px;
+  word-break: break-word;
+  }
+  
+  .text {
+    color: rgb(235, 235, 235);
+  font-family: system-ui, sans-serif;
+  word-break: break-word;
+  line-height: 1.4rem;
+  font-size: 16px;
+  }
+  
+  .updates {
+   gap: 0px;
+  }
+  
+  .prediction {
+   gap: 40px;
+  }
+  
+  .grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+  }
+  
+  @media (max-width: 600px) {
+    .grid {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+  
+  .searching {
+      display: flex;
+      margin-top: -24px;
+  }
+
+  .twopane {
+    display: flex;
+  flex-direction: row;
+  position: relative;
+  gap: 35px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  
+  .navbar li {
+    margin-right: 15px;
+    font-size: 1.05em;
+  }
+  
+  .navbar .special {
+    font-size: 1.2em;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .input {
+    width: 30rem;
+    border: 0;     
+    color: inherit;    
+    font-size: 1em;     
+    padding: 8px 12px;  
+    margin: 1rem 0;   
+    border-radius: 6px;
+    background-color: rgb(40, 40, 40);
+    color: rgb(232, 232, 232);
+  }
+  
+  .inputting {
+    display: flex;
+    gap: 25px;
+  }
+  
+  .button {
+    width: 10rem;
+    border: 0;    
+    font-size: 1em;     
+    padding: 8px 12px;     
+    background-color: rgb(81, 81, 81);
+    color: rgb(232, 232, 232);
+    cursor: pointer;
+  }
+
+  .h1 {
+    font-size: 1px;
+  }
+
+  .header {
+      font-size: 20px;
+      font-weight: 700;
+  }
+
+  @media (max-width: 1200px) {
+    .portfolio2 {
+      width: 100%;
+      border-radius: 0px;
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+    }
+    .oogabooga {
+      display: none;
+    }
+
+    .maincontent {
+      flex-basis: 65%;
+      flex-grow: 0;
+      flex-shrink: 0;
+      overflow-y: auto;
+      padding-bottom: 0px;
+      padding-right: 44.8px;
+      padding-top: 0px;
+      border-right-color: transparent;
+      border-right-style: solid;
+      border-right-width: 2px;
+      box-sizing: border-box;
+      }
+  }
+
+  
+  @media (max-width: 1200px) {
+      .navbar {
+          flex-direction: column;
+      }
+      .twopane {
+          flex-direction: column;
+      }
+      .searching {
+          margin-top: 0;
+      }
+  }
