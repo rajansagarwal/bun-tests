@@ -5,11 +5,11 @@ import Image from 'next/image'
 export default function Input() {
 
     const [search, setSearch] = useState(null)
-    const [random, setRandom]   = useState('')
-    const phrases = ["around here, it's always summer", "lol", "OMEGALUL"]
+    const [random, setRandom]   = useState<any>()
+    const phrases = ["around here, it's always summer", "build the change you wish to see", "hacker at heart", "empower with expression", "think, build, ship", "LUNAtic"]
 
     const selectPhrase = () => {
-        setRandom('hey')
+        setRandom(phrases[Math.floor((Math.random() * phrases.length))])
         console.log(phrases[Math.floor((Math.random() * phrases.length))])
     }
 
@@ -34,7 +34,7 @@ export default function Input() {
         <main className={styles.main}>
             <div className={styles.navbar}>
           <ul>
-            <li className={styles.special}><b>rajan agarwal <span className="faded">{random}</span></b></li>
+            <li className={styles.special}><b>rajan agarwal ~ <span className="faded">{random}</span></b></li>
           </ul>
           
           <div className={styles.searching}>
@@ -64,7 +64,7 @@ export default function Input() {
         <div className={styles.twopane}>
     
         <div className={styles.maincontent}>
-        <div className={styles.header}><h3>hey, i&#39;m rajan.</h3></div>
+        <div className={styles.header}><h3>hey, i&#39;m rajan 🌱</h3></div>
         <div className={styles.text}><p>i&#39;m a 17 year old developer, designer and author building tools for thought.</p></div>
         <div className={styles.text}><p>currently, i'm a <b>Software Engineer Intern</b> at <b>Camp Social 🏕</b>, the social protocol that incentivizes human interconnectedness that communities were built to enable.</p></div>
         <div className={styles.text}><p>on the side, i&#39;m currently building a digital home for communities, using algorithmic evolutionary game theory to design idyllic organ systems and research neurodegeneration from emerging pathogens with Cobweb.</p></div>
@@ -73,9 +73,9 @@ export default function Input() {
         <div className={styles.text}><p>welcome to my humble abode, <br/>make yourself at home</p></div>
         <br/><br/>
         <div className={styles.header}><h3>my story.</h3></div>
-        <div className={styles.text}><p>i recall my very first few machines. they didn&#39;t do much, some moved around slowly with blinking lights, others could water through pipes around and a few moved a few motors to make something funky</p></div>
+        <div className={styles.text}><p>i recall my very first few machines. they didn&#39;t do much, some moved around slowly with blinking lights, others could water through pipes around and a few moved a few motors to make something that I was proud of.</p></div>
        
-       <br/><br/>
+       <br/>
     <div className={styles.oogabooga}>
         <div>
         <img src="https://file.heyrajan.com/staywoke2.jpg" className={styles.imagegallery} id="x-mobile"/>
@@ -90,25 +90,24 @@ export default function Input() {
         </div>
         
 </div> 
-
-        <div className={styles.oogabooga}>
-        <div>
-        <img src="https://file.heyrajan.com/staywoke2.jpg" className={styles.imagegallery} id="x-mobile"/>
-        <p className={styles.time}>date</p>
-        <p className={styles.text}>date</p>
-        </div>
-
-        <div>
-        <img src="https://file.heyrajan.com/staywoke2.jpg" className={styles.imagegallery} id="x-mobile"/>
-        <p className={styles.time}>date</p>
-        <p className={styles.text}>date</p>
-        </div>
-        
-        </div>
 </div> 
         
         <div className={styles.updates}>
-        <div className={styles.header}><p>ideation stream</p></div>
+
+        <div className={styles.header}><p>a few things i&#39;ve made</p></div>
+            <div className={styles.update}>
+                <div className={styles.time}><p>20/05/2022</p></div>
+                <div className={styles.text}><p>aaa {search}</p></div>
+            </div>
+            
+            <div className={styles.update}>
+                <div className={styles.time}><p>20/05/2022</p></div>
+                <div className={styles.text}><p>font size with</p></div>
+            </div>
+
+            <br/><br/>
+          
+        <div className={styles.header}><p>stream</p></div>
             <div className={styles.update}>
                 <div className={styles.time}><p>20/05/2022</p></div>
                 <div className={styles.text}><p>aaa {search}</p></div>
